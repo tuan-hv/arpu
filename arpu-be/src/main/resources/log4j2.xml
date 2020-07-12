@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2020 Viettel Digital Services. All rights reserved.
+  ~ VIETTEL PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+  ~
+  -->
+
+<Configuration>
+  <Properties>
+    <property name="LOG_LEVEL">INFO</property>
+  </Properties>
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <JSONLayout compact="true"
+                  eventEol="true"
+                  stacktraceAsString="true"
+                  properties="true"
+      />
+    </Console>
+    <RollingFile name="RollingFile"
+                 fileName="../logs/arpu_be/arpu_be.log"
+                 filePattern="../logs/apru_be/$${date:yyyy-MM}/arpu_be_%d{yyyy-MM-dd}.log">
+      <PatternLayout>
+        <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+      </PatternLayout>
+      <Policies>
+        <OnStartupTriggeringPolicy />
+        <SizeBasedTriggeringPolicy
+                size="50 MB" />
+        <TimeBasedTriggeringPolicy />
+      </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <!-- LOG everything at INFO level -->
+    <Root level="${LOG_LEVEL}">
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="RollingFile" />
+    </Root>
+    <!-- LOG "com.viettel.arpu*" at TRACE level -->
+    <logger name="com.viettel.arpu" level="trace">
+      <appender-ref ref="RollingFile" />
+      <appender-ref ref="Console" />
+    </logger>
+
+  </Loggers>
+
+</Configuration>

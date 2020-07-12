@@ -1,0 +1,37 @@
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+*/target/**
+/mobilemoney-2.0/mobilemoney-app/target/*
+target/
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Configuration ###
+#src/main/resources/application.yml
+#src/main/resources/application.properties
+
+### Rest Docs ###
+generated-docs/
+
+logs/
+
+replay_*.log

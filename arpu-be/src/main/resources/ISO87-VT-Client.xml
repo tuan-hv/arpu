@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE isopackager SYSTEM "genericpackager.dtd">
+
+<!--
+Licensed to the Infomation Technology Center - Viettel Telecom.
+http://www.vietteltelecom.vn
+ISO 8583:1987 (ASCII) field descriptions for GenericPackager
+-->
+
+<isopackager>
+    <isofield id="0" length="4" name="MESSAGE TYPE INDICATOR" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="1" length="16" name="BIT MAP" class="org.jpos.iso.IFA_BITMAP"/>
+    <isofield id="2" length="19" name="CARD NUMBER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="3" length="6" name="PROCESS CODE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="4" length="12" name="TRANSACTION AMOUNT" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="7" length="14" name="TRANSMISSION DATE/TIME" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="8" length="8" name="INQUIRY START DATE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="9" length="8" name="INQUIRY END DATE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="11" length="6" name="SYSTEM TRACE AUDIT NUMBER" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="14" length="8" name="ATM HOLD DATE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="19" length="20" name="PROVINCE CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="21" length="3" name="CARD_CLOSE_CODE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="22" length="1" name="RECEVED MONEY TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="24" length="1" name="CARD_REOPEN_TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="25" length="30" name="SERVICE CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="26" length="1" name="ACCOUNT CHECK TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="28" length="9" name="TRANSACTION FEE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="30" length="12" name="ATM AMOUNT CHECK" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="32" length="15" name="TELCO CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+	<isofield id="33" length="99" name="RM_MAIN" class="org.jpos.iso.IFA_LLCHAR"/>
+	<isofield id="34" length="99" name="RM_SUB" class="org.jpos.iso.IFA_LLCHAR"/>
+	<isofield id="35" length="99" name="MONEY SOURCE" class="org.jpos.iso.IFA_LLCHAR"/>
+	<isofield id="36" length="99" name="MONEY SOURCE RECV" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="37" length="12" name="REFERENCE NUMBER" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="38" length="1" name="ACCOUNT TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="39" length="3" name="RESPONSE CODE" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="40" length="6" name="SERVICE_INDICATOR" class="org.jpos.iso.IF_CHAR"/>
+   <!-- <isofield id="41" length="10" name="VIETTEL SHOP CODE" class="org.jpos.iso.IF_CHAR"/>-->
+   <isofield id="41" length="40" name="VIETTEL SHOP CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="42" length="40" name="VIETTEL STAFF CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="43" length="999" name="VIETTEL SHOP ADDRESS" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="44" length="20" name="MOBILE NUMBER RECEIVER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="45" length="20" name="HOME PHONE  NUMBER RECEIVER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="46" length="23" name="NAME DISPLAY ON CARD" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="47" length="1" name="ISSUE METHOD" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="48" length="8" name="BIRTH DAY" class="org.jpos.iso.IF_CHAR"/>
+    <isofield id="49" length="3" name="CURRENCY CODE" class="org.jpos.iso.IF_CHAR"/>
+    <isofield id="50" length="999" name="TID NUMBER" class="org.jpos.iso.IFA_LLLCHAR"/>
+	<isofield id="51" length="99" name="AGENT CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="52" length="999" name="AGENT NAME" class="org.jpos.iso.IFA_LLLCHAR"/>
+<isofield id="53" length="16" name="CARD SECURITY CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="54" length="99" name="BALANCE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="55" length="25" name="VIETTEL REQUEST ID" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="56" length="3" name="CARD STATUS" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="57" length="1" name="CARD LEVEL" class="org.jpos.iso.IF_CHAR"/>
+    <isofield id="58" length="35" name="ACCOUNT NAME" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="59" length="35" name="CUSTOMER NAME" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="60" length="20" name="MOBILE NUMBER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="61" length="6" name="CUSTOMER GENDER" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="62" length="99" name="PASSWORD (CURRENT )" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="63" length="15" name="OTP" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="64" length="32" name="MESSAGE SIGNATURE" class="org.jpos.iso.IFA_NUMERIC"/>
+	<isofield id="65" length="99" name="CUSTOMER TYPE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="66" length="1" name="ID TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="67" length="1" name="TRANSACTION INQUIRY TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="68" length="999" name="CONTACT ADDRESS" class="org.jpos.iso.IFA_LLLCHAR"/>
+<isofield id="69" length="1" name="CHANNEL TYPE ID" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="70" length="6" name="SMS AMOUNT" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="71" length="3" name="SMS DAY" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="72" length="8" name="EXPIRED DATE" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="73" length="12" name="INTEREST AMOUNT" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="74" length="1" name="STATUS" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="75" length="99" name="DEV STAFF CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="76" length="99" name="DEV STAFF NAME" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="77" length="99" name="SAVING DURATION" class="org.jpos.iso.IFA_LLCHAR"/> 
+    <isofield id="78" length="20" name="BUSINESS REGISTER NUMBER" class="org.jpos.iso.IFA_LLNUM"/>
+	<isofield id="79" length="20" name="FAX NUMBER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="80" length="10" name="TRANSACTION TYPE" class="org.jpos.iso.IF_CHAR"/>
+    <isofield id="81" length="30" name="VENUE ID" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="82" length="1" name="FEE SOURCE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="83" length="13" name="DISCOUNT BANK" class="org.jpos.iso.IF_CHAR"/>
+    <isofield id="84" length="12" name="DISCOUNT PERCENT" class="org.jpos.iso.IF_CHAR"/>
+<isofield id="85" length="99" name="ADDITIONAL DATA" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="87" length="1" name="INTEREST TYPE" class="org.jpos.iso.IFA_NUMERIC"/>
+<isofield id="88" length="99" name="INTEREST PERCENT" class="org.jpos.iso.IFA_LLCHAR"/> 
+    <isofield id="89" length="1" name="CARD REQUEST TYPE" class="org.jpos.iso.IF_CHAR"/>
+	<isofield id="90" length="99" name="BANK TRANS ID" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="91" length="1" name="MOBILE STATUS" class="org.jpos.iso.IF_CHAR"/>
+    <isofield id="92" length="25" name="ORINGINAL REQUEST ID" class="org.jpos.iso.IFA_LLLCHAR"/>
+<isofield id="93" length="20" name="MOBILE CONTACT" class="org.jpos.iso.IFA_LLNUM"/>
+<isofield id="94" length="99" name="REMAINING PAYMENT" class="org.jpos.iso.IFA_LLLCHAR"/>
+<isofield id="95" length="13" name="DISCOUNT AMOUNT" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="96" length="99" name="PAYMENT TYPE" class="org.jpos.iso.IFA_LLCHAR"/>
+ <isofield id="97" length="8" name="CARD ISSUE DATE" class="org.jpos.iso.IFA_NUMERIC"/>
+ <isofield id="98" length="11" name="BANK SHOP CODE" class="org.jpos.iso.IFA_LLNUM"/>
+<isofield id="99" length="11" name="BANK BRANCH CODE" class="org.jpos.iso.IFA_LLNUM"/>
+	<isofield id="100" length="99" name="VIETTEL BANK CODE" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="101" length="99" name="PASSWORD (NEW)" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="102" length="30" name="ACCOUNT NUMBER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="103" length="25" name="CREDIT ACCOUNT NUMBER" class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield id="104" length="25" name="IDENTITY NUMBER" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="105" length="999" name="EMAIL ADDRESS" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="106" length="25" name="BENEFICARY IDENTITY NUMBER" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="107" length="99" name="PROVINCE NAME" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="108" length="25" name="CARD SERIAL NUMBER" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="109" length="8" name="DATE OF ISSUE" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="110" length="999" name="PLEACE OF ISSUE" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="111" length="999" name="CUSTOMER ADDRESS" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="112" length="999" name="MINI STATEMENT DATA" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="113" length="999" name="ACCOUNT LIST" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="114" length="99" name="ATM LOCATION" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="115" length="999" name="ATM ID CODE" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="116" length="99" name="BEN_BANK_NAME" class="org.jpos.iso.IFA_LLCHAR"/>
+<isofield id="117" length="999" name="SHOP NAME" class="org.jpos.iso.IFA_LLLCHAR"/>   
+ <isofield id="118" length="999" name="CONTENT TRANSACTION" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="119" length="999" name="BILLING CODE" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="120" length="999" name="CUSTOMER SIGNATURE" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="121" length="99" name="CUSTOMER CODE (MB)" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="122" length="999" name="BENEFICARY NAME" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="123" length="999" name="BENEFICIARY BANK CODE" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="124" length="999" name="CONTENT DESCRIPTION SERVICE" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="125" length="99" name="CUSTOMER CODE VT" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="126" length="999" name="SIGNATURE URL" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="127" length="99" name="BANK BRANCH" class="org.jpos.iso.IFA_LLCHAR"/>
+</isopackager>

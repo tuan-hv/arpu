@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+
+  mariadb:
+    image: mariadb/server:10.4
+    ports: 
+      - 4306:3306
+    environment:
+      - MARIADB_ROOT_PASSWORD=smartosc123
+      - MARIADB_USER=vt
+      - MARIADB_PASSWORD=secret
+      - MARIADB_DATABASE=arpu
+    volumes:
+      - mariadb_volume:/var/lib/mysql
+    restart: always
+    container_name: mariadb-dev
+  arpu-be:
+    image: arpu-be:latest
+    container_name: arpu-be-dev
+    ports:
+      - 8085:8085
+    environment:
+      - SPRING_PROFILES_ACTIVE=vt-dev
+    restart: always
+    networks:
+      - backend
+      - web
+  arpu-fe:
+    image: arpu-fe:latest
+    container_name: arpu-fe-dev
+    ports:
+      - 4200:4200
+    restart: always
+    networks:
+      - web
+
+volumes:
+  mariadb_volume:
+    driver: local
+
+networks:
+  web:
+    driver: bridge
+  backend:
+    driver: bridge
